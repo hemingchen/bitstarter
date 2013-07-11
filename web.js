@@ -1,6 +1,6 @@
-var sys=require("sys"), fs = require('fs');
+var sys=require('sys'), fs = require('fs');
 
-var infileBuf = fs.readFile("index.html")
+var infileBuf = fs.readFile('index.html','utf8')
 
 var express = require('express');
 

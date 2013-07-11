@@ -2,12 +2,14 @@ var sys=require("sys"), fs = require('fs');
 
 var infileBuf = fs.readFile("index.html","utf8")
 
+var infileBufLen = infileBuf.length
+
 var express = require('express');
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(infileBuf.toString("utf8",0,infileBuf.length));
+  response.send(infileBuf.toString("utf8",0,infileBufLen));
 });
 
 var port = process.env.PORT || 5000;

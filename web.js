@@ -1,3 +1,8 @@
+var sys=require("sys"), fs = require('fs');
+
+var infileBuf = fs.readFile("index.html")
+
+var infileBufLen = infileBuf.length
 
 var express = require('express');
 

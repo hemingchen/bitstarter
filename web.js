@@ -1,7 +1,5 @@
 var sys=require("sys"), fs = require('fs');
 
-var infileBuf = fs.readFile("index.html")
-
 var express = require('express');
 
 var app = express.createServer(express.logger());

@@ -1,11 +1,10 @@
-var sys=require("sys"), fs = require('fs');
 
 var express = require('express');
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('lalala'));
+  response.send('lalala');
 });
 
 var port = process.env.PORT || 5000;
